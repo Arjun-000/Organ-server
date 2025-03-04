@@ -9,7 +9,7 @@ server.use(cors())
 server.use(express.json())
 server.use(router)
 
-const PORT = 3005 
+const PORT = 3005 || process.env.PORT
 
 
 server.listen(PORT,()=>{
